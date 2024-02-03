@@ -1,0 +1,17 @@
+#form{
+    background-color: aquamarine;
+    height: 155px;
+    width: 277px;
+    padding: 55px;
+    margin: auto;
+}
+#name{
+    margin: 15px;
+}
+#password{
+    margin-left: 15px;
+    margin-top: 3px;
+}
+#submit{
+    margin: 15px;
+}

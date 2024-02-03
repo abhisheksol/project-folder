@@ -1,0 +1,80 @@
+>
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Theatre Booking Receipt</title>
+        <link rel="stylesheet" href="recipt.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    </head>
+    <body>
+        <div id="convert">
+        <div class="receipt">
+            <div class="header">
+                Theatre Booking Receipt
+            </div>
+            <!-- movie name: -->
+            <div class="details">
+                <div class="detail">
+                    <span>Movie:</span>
+                    <span id="moviename"></span>
+                </div>
+                            <!-- date : -->
+                <div class="detail">
+                    <span>Date:</span>
+                    <span id="date"></span>
+                </div>
+                <!-- Other detail elements here -->
+                     <!-- time : -->
+            <div class="detail">
+                <span>Showtime:</span>
+                <span id="time">7:00 PM</span>
+            </div>
+                        <!-- seat: -->
+            <div class="detail">
+                <span>Seat(s):</span>
+                <span id="seat">Row A, Seat 1-3</span>
+            </div>
+                        <!-- total tickets: -->
+            <div class="detail">
+                <span>Total Tickets:</span>
+                <span id="totaticket">3</span>
+            </div>
+                        <!-- total price: -->
+            <div class="detail">
+                <span>Ticket Price:</span>
+                <span id="totatprice">$15.00</span>
+            </div>
+                        <!-- subtotal: -->
+            <div class="detail">
+                <span>Subtotal:</span>
+                <span id="Subtotal" >$45.00</span>
+            </div>
+                        <!-- convience fee: -->
+            <div class="detail">
+                <span>Convenience Fee:</span>
+                <span id="Convenience">$3.00</span>
+            </div>
+        </div>
+                    <!-- total amount: -->
+        <div class="total">
+            <div class="detail">
+                <span>Total Amount:</span>
+                <span id="Total_Amount">$48.00</span>
+            </div>
+        </div></div>
+    </div>           <button type="submit" onclick="pdfgenerator()">PDF...</button>
+</div>
+</body>
+<script src="convert.js"></script>
+<script>
+    const params = new URLSearchParams(window.location.search);
+    document.getElementById("moviename").textContent = params.get("moviename1");
+    document.getElementById("date").textContent = params.get("date");
+    document.getElementById("time").textContent = params.get("showtime");
+    document.getElementById("seat").textContent = params.get("seats");
+    document.getElementById("totaticket").textContent = params.get("ticket_price");
+    document.getElementById("totatprice").textContent = params.get("ticket_total");
+    document.getElementById("Subtotal").textContent = params.get("subtotal");
+    
+</script>
+</html>

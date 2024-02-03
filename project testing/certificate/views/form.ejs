@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            font-family: 'Oswald', sans-serif;
+
+        }
+
+        .container {
+            background-color: aquamarine;
+            padding: 55px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 13px 14px 12px red
+        }
+
+        .head {
+            padding-top: 45px;
+            padding-left: 20px;
+            color: black;
+            font-weight: 900;
+
+        }
+
+        .info {
+            background-color: rgb(255, 153, 127);
+            padding: 55px;
+            position: absolute;
+            border-radius: 15px;
+
+            transform: translate(-50%, -50%);
+            /* box-shadow: 13px 14px 12px red; */
+            width: 80%;
+            left: 50%;
+            top: 100%;
+        }
+
+        input {
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 5px;
+            margin-top: 5px;
+
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: darkseagreen;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1> Welcome to the shortcuts Certification Generator! </h1>
+        <h3> Create your personalized DevTown Web Development certification with us 👉👉.</h3>
+
+    </div>
+
+    <div class="container">
+
+        <form action="/get" method="post">
+            <label for="">Enter ur name :</label><br>
+            <input type="text" name="name"><br>
+            <button type="submit">create</button>
+        </form>
+
+    </div>
+
+    <div class="info">
+        <p>⚠️⚠️⚠️ 👉👉I have created this website as a leisure project,
+            providing you with the ability to generate your personalized DevTown
+            certification. Please be aware that, while you can indeed create your certification here,
+            this platform does not offer a verified certification link.
+            Feel free to explore and enjoy generating your personalized
+            certificate just for fun.⚠️⚠️⚠️
+        </p>
+    </div>
+</body>
+
+</html>

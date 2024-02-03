@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cerificate</title>
+    <style>
+        body {
+            background-image: url(new.png);
+            background-repeat: no-repeat;
+        }
+    
+        #hello {
+            background: transparent;
+            color: rgb(0, 106, 255);
+            margin-top: 353px;
+            font-size: 35px;
+            font-style: italic;
+            font-weight: 900;
+            width: 130px;
+            white-space: nowrap;
+            /* imp line  */
+            position: absolute;
+            margin-left: 120px;
+        }
+    </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+
+
+<div id="convert"> hwllo jii
+<body>
+
+    
+
+        <div id="hello">
+            <p>
+                <%=name%>
+            </p>
+
+
+        </div>
+    
+    <button type="submit" onclick="pdfgenerator()">PDF...</button>
+</body></div>
+<script>
+    function pdfgenerator() {
+        var element = document.getElementById('convert');
+
+        html2pdf().from(element).save();
+    } 
+</script>
+
+</html>

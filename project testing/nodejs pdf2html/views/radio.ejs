@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #apple {
+      padding: 10px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+
+    .dropdown {
+      display: none;
+      /* position: absolute; */
+      background-color: antiquewhite;
+      width: 19%;
+      border-radius: 15px;
+      border: solid rgb(8, 8, 8);
+      border-width: 3px;
+
+
+    }
+
+    .options:hover .dropdown {
+      display: block;
+      position: absolute;
+    }
+
+    #butt {
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--  <form action="/select" method="post">
+               <select name="items" id="items">
+                <option value="vadapav1">vadapav</option>
+                <option value="paav bhaji">paav bhaji</option>
+                <option value="samosa">samosa</option>
+               </select>
+               
+            </form> -->
+  <!-- ... other HTML ... -->
+  <form action="/select" id="forms" name="select" method="post">
+    <span class="options"> options:
+        <div class="dropdown">
+            <input type="checkbox" name="items" id="vadapav1" value="vadapav1">
+            <label for="vadapav1">vadapav1</label> <br>
+            <input type="checkbox" name="items" id="paav" value="paav">
+            <label for="paav">paav</label> <br>
+            <input type="checkbox" name="items" id="samosa" value="samosa">
+            <label for="samosa">samosa</label> <br>
+        </div>
+    </span>
+    <br>
+    <button type="submit" id="butt">ORDER NOW</button>
+</form>
+
+  <!-- ... other HTML ... -->
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style>
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: flex;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+<div class="dropdown">
+  <button>Dropdown</button>
+  <div class="dropdown-content">
+    <label><input type="checkbox"> Option 1</label><br>
+    <label><input type="checkbox"> Option 2</label><br>
+    <label><input type="checkbox"> Option 3</label><br>
+    <!-- Add more checkbox options as needed -->
+</div>
+</div>
+
+</body>
+
+</html> -->
